@@ -11,18 +11,70 @@
 }
 
 
-.header {}
+.header:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
 
-.logo {}
+.logo {
+  float: left;
+}
 
-.navigation {}
+.navigation {
+  float: right;
+}
 
-.sidebar {}
+.sidebar {
+  float: left;
+  width: 30%;
+}
 
-.main_content {}
+.main_content:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
 
-.sub_content {}
+.sub_content {
+  float: right;
+  width: 40%;
+}
 
-.sub_content_2 {}
+.sub_content_2 {
+  float: right;
+  width: 40%;
+}
 
 .footer {}
+
+.container {
+  width: 1024px; /* what happens to the widget boxes when you change this width? */
+  margin: 0 auto;
+}
+
+
+.main_content:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* hint! what do you need to add here? */
+
+.widget {
+  float: left;
+  /* how do you make the widgets float next to each other? */
+  /* what happens when you change float left to float right? why? */
+}
+
+
+.footer {
+  clear: both;
+  /* hint! */
+}
